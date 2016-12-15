@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js"></script>
+<script>
+function setup(){
+	createCanvas(500,500);
+	fill(200,50,100);
+	stroke(100,0,10);
+}
+function draw(){
+	if(keyIsPressed){
+
+		ellipse(mouseX,mouseY,80,80);
+	}
+}
+function mousePressed(){
+	fill(0,150,10);
+	console.log("pressed");
+}
+
+function mouseReleased(){
+	fill(50,100,50);
+	console.log("released");
+}
+function keyPressed(){
+	if(keyCode == UP_ARROW){
+		console.log("上");
+}
+}
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
+
